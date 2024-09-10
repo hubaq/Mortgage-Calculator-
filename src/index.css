@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+/* .checked {
+  background-color: red;
+  opacity: calc(45 / 100);
+  border-color: hsl(61, 70%, 52%);
+} */
+
+.checked {
+  @apply border-lime bg-red/5 before:absolute before:left-4 before:top-4 before:z-50 before:h-3 before:w-3 before:rounded-full before:bg-lime before:ring-1 before:ring-lime before:ring-offset-2;
+}
+
+/* .clicked::before {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: 1px solid hsl(61, 70%, 52%);
+  background-color: hsl(61, 70%, 52%);
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  z-index: 50;
+} */
